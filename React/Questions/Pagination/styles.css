@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.quote-Container{
+    display : grid;
+    gap:10px;
+}
+
+.quote-card{
+    padding: 10px;
+    display: grid;
+    grid-template-columns:  100px 100px 1fr;
+    column-gap: 100px;
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+.quotes-header{
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.page-actions{
+    display : flex;
+    justify-content : center;
+    gap:100px;
+    margin-top:50px;
+
+    
+}
+
+.page-no-button{
+    margin-right:5px;
+}
+
+.active-page{
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid black;
+}
