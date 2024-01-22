@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="timer-container">
+        <div class="header">
+            Stopwatch
+        </div>
+        <div class="stopwatch-container">
+            <div>
+                {{hours > 9 ? hours : ('0'+hours)}} <span>hrs :</span>
+            </div>
+            <div>
+                {{minutes > 9 ? minutes : ('0'+minutes)}} <span>mins :</span>
+            </div>
+            <div>
+                {{seconds > 9 ? seconds : ('0'+seconds)}} <span>secs </span>
+            </div>
+            <!-- <div>
+                Passed
+            </div> -->
+        </div>
+        
+    
+        <div class="actions">
+            <button type="submit" (click)="onStartPause()">{{!isTimerRunning ? 'Start' : 'Pause'}}</button>
+            <button type="submit" (click)="onReset()">Reset</button>
+        </div>
+    </div>
+</div>

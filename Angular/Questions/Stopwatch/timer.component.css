@@ -1,0 +1,50 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(13, 14, 14);
+}
+
+.timer-container{
+    border: 1px solid black;
+    padding : 100px;
+    border-radius: 5px;
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:50px;
+    text-align: center;
+}
+
+.stopwatch-container{
+    font-size: 50px;
+    font-style: italic;
+    display: grid;
+    gap:10px;
+    grid-template-columns: auto auto auto;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    gap:15px
+}
+
+button {
+    width: 150px;
+    height:50px;
+    font-size: large;
+    font-weight: 700;
+    color:  green;
+}
+
+span{
+    font-size: large;
+}
