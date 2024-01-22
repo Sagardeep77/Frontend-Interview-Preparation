@@ -1,0 +1,46 @@
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px
+}
+
+.grid-container {
+    border: 1px solid black;
+    background-color: rgb(161, 156, 156);
+    padding: 80px;
+    display: grid;
+    grid: repeat(3, 80px) / repeat(3, 80px);
+    /* grid-template-columns: 80px 80px 80px; */
+    gap: 20px
+}
+
+.grid-cell {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(105, 104, 104);
+}
+
+div.active {
+    background-color: rgb(84, 162, 6);
+}
+
+div.grid-cell:nth-child(5) {
+    visibility: hidden;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: large;
+    font-style: italic;
+}
