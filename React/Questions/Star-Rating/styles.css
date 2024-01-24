@@ -1,0 +1,64 @@
+.app-container {
+
+    display: grid;
+    grid-template-rows: repeat(6, 15vh);
+    padding: 20px
+}
+
+.app-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.app-container  p {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: left;
+}
+
+.star-rating-container {
+    width: 50vw;
+    border:1px solid black;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.star-rating-container.disabled {
+    background-color: gray;
+}
+
+
+.rating-text{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+    float: right;
+}
+
+
+span>svg {
+    height: 40px;
+    width: 40px;
+}
+
+
+.star {
+    cursor: pointer;
+}
+
+input[type=radio] {
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    span>svg {
+        height: 20px;
+        width: 20px;
+    }
+}
