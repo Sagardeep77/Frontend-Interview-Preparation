@@ -1,0 +1,59 @@
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lights-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    background-color: rgb(196, 194, 194);
+}
+
+.light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+
+    &:nth-child(3) {
+        background-color: rgba(0, 255, 0, 0.3);
+    }
+
+    &:nth-child(2) {
+        background-color: rgba(255, 240, 0, 0.3);
+    }
+
+    &:nth-child(1) {
+        background-color: rgba(155, 0, 0, 0.3);
+    }
+}
+
+.light.active{
+    &:nth-child(3) {
+        background-color: rgba(0, 255, 0, 1);
+    }
+
+    &:nth-child(2) {
+        background-color: rgba(255, 240, 0, 1);
+    }
+
+    &:nth-child(1) {
+        background-color: rgba(155, 0, 0, 1);
+    }
+}
+
+/* .light:nth-child(1) {}
+
+.light:nth-child(2) {}
+
+.light:nth-child(3) {} */
