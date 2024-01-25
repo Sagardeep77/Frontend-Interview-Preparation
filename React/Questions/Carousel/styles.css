@@ -1,0 +1,66 @@
+.container{
+    width:100vw;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 72px auto;
+}
+
+.carousel-items-container{
+    display:flex;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dots-container {
+    /* position: absolute; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dots-container .dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.dots-container .dot.active {
+    background-color: green;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media  (max-width:720px) {
+    .dots-container .dot {
+        height: 10px;
+        width: 10px;
+    }
+    
+    button{
+        height: 30px;
+        width: 90px;
+        font-size: 12px;
+    }
+}
