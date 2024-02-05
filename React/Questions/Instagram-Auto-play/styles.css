@@ -1,0 +1,18 @@
+.reel-cards-container {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  .reel-card {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+  }
+  
+  video {
+    height: 100vh;
+    width: 50vw;
+  }
+  
