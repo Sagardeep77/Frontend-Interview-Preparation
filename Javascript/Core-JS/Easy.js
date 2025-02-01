@@ -86,7 +86,7 @@ myfun()
 **/
 ---------------------------
 {
-    // What is output?
+    // What is output and how to solve it?
     const obj = {
     name: "Alex costa",
     sayName: function (){
@@ -98,4 +98,17 @@ setTimeout(obj.sayName, 3000)
     
 }
 ----------------------------------
+// What is output?
+setTimeout(()=>console.log("2"), 0)
+
+Promise.resolve().then(()=> console.log("1"))
+
+queueMicrotask(()=> {
+    console.log("3")
+    queueMicrotask(()=> console.log("4"))
+})
+
+console.log("5")
+
+-------------------------------------------
 //end-2
