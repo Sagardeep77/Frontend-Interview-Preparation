@@ -110,7 +110,7 @@ queueMicrotask(()=> {
 })
 
 console.log("5")
-
+//Must see: https://www.youtube.com/watch?v=eiC58R16hb8
 -------------------------------------------
 new Promise((resolve)=> {
     console.log("1")
@@ -118,6 +118,6 @@ new Promise((resolve)=> {
 }).then(res => console.log(res))
 
 console.log(3)
-
+// Must see: https://www.youtube.com/watch?v=Xs1EMmBLpn4&t=243s
 -----------------------------------------
 //end-2
