@@ -69,7 +69,7 @@
   console.log(c);
   console.log(d);
 }
-
+----------------------------------------
 /* what is the output?
 myfun();
 
@@ -84,5 +84,18 @@ function myfun(){
 }
 myfun()
 **/
+---------------------------
+{
+    // What is output?
+    const obj = {
+    name: "Alex costa",
+    sayName: function (){
+        console.log(this.name)
+    }
+   }
 
+setTimeout(obj.sayName, 3000)
+    
+}
+----------------------------------
 //end-2
