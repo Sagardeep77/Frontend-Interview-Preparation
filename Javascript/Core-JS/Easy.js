@@ -95,6 +95,7 @@ myfun()
    }
 
 setTimeout(obj.sayName, 3000)
+// sol: we can use bind or closures to make it work.
     
 }
 ----------------------------------
@@ -111,4 +112,12 @@ queueMicrotask(()=> {
 console.log("5")
 
 -------------------------------------------
+new Promise((resolve)=> {
+    console.log("1")
+    resolve(2)
+}).then(res => console.log(res))
+
+console.log(3)
+
+-----------------------------------------
 //end-2
